@@ -45,7 +45,8 @@ header a {
 
 header .logo {
   width: 90px;
-  height: 60px;
+  aspect-ratio: 3/2;
+  display: flex;
   transition: 0.3s all ease-in-out;
 }
 
@@ -103,8 +104,8 @@ nav li a {
 }
 
 header button {
-  width: 50px;
-  height: 50px;
+  height: 71%;
+  aspect-ratio: 1/1;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -122,6 +123,7 @@ header button {
 header button svg {
   stroke: #a401b4;
   fill: #a401b4;
+  display: flex;
   width: 100%;
   height: 100%;
 }
@@ -133,16 +135,10 @@ header.scroll {
 
 header.scroll .logo {
   width: 70px;
-  height: 45px;
 }
 
 header.scroll nav {
   font-size: 30px;
-}
-
-header.scroll button {
-  width: 40px;
-  height: 40px;
 }
 
 @media (max-width: 768px) {
@@ -152,6 +148,10 @@ header.scroll button {
 
   nav {
     display: none;
+  }
+
+  .header__content {
+    padding: 0 2.73vw;
   }
 }
 
@@ -168,7 +168,7 @@ h2 {
 
 .gallery__container {
   width: 100%;
-  height: 480px;
+  aspect-ratio: 1280 / 480;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -182,7 +182,7 @@ h2 {
 
 .slide img {
   width: 100%;
-  height: 540px;
+  aspect-ratio: 1280 / 540;
   vertical-align: middle;
   z-index: -1;
 }
@@ -257,6 +257,15 @@ h2 {
   margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+  .main__content {
+    gap: 8px;
+  }
+
+  .gallery {
+    margin-bottom: 0;
+  }
+}
 .merch-collection {
   width: 100%;
 }
@@ -317,6 +326,29 @@ h2 {
   margin: 0;
   font-weight: bold;
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 130px;
+    height: 180px;
+  }
+
+  .product-card__description {
+    display: none;
+  }
+
+  .product-card__price {
+    font-size: 1em;
+  }
+
+  .product-card__title {
+    font-size: 0.8em;
+  }
+
+  .product-collection {
+    gap: 10px;
+  }
 }
 
 .promo {
@@ -384,6 +416,12 @@ h2 {
 
 .promo::-webkit-scrollbar-track {
   background: #a401b4;
+}
+
+@media (max-width: 768px) {
+  .promo {
+    display: none;
+  }
 }
 
 .cart__header, .cart__item, .cart__total {
@@ -529,4 +567,28 @@ footer .social-icons__list a {
   background-color: #ff1616
 }
 
+@media (max-width: 768px) {
+  .footer__row {
+    flex-direction: column;
+  }
+
+  .copyright {
+    max-width: 100%;
+  }
+
+  .social-icons {
+    max-width: 100%;
+  }
+
+  .social-icons__list {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__container {
+    padding: 5px;
+    text-align: center;
+  }
+}
 
