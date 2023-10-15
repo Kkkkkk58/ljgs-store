@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Официальный интернет-магазин мерча сообщества LJGS">
+  <meta name="keywords" content="LJGS, мерч, официальный магазин, магазин, купить">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+  <link rel="icon" href="assets/icons/logo.png">
+
+  <title>LJGS Store</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__content">
+    <a href="index.html">
+      <img src="assets/icons/logo.png" alt="logo" class="logo">
+    </a>
+
+    <div class="header__info">
+      <nav>
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </nav>
+
+      <ul class="header__icons">
+        <li>
+          <button class="search-btn">
+            <svg class="search-btn__icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/icons/icons.svg#i-header-search"
+                   xlink:href="assets/icons/icons.svg#i-header-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="cart-btn" onclick="location.href='cart.html'" type="button">
+            <svg class="cart-btn__icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/icons/icons.svg#i-cart" xlink:href="assets/icons/icons.svg#i-cart"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="profile-btn">
+            <svg class="profile-btn__icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/icons/icons.svg#i-profile" xlink:href="assets/icons/icons.svg#i-profile"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn">
+            <svg class="nav-btn__icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/icons/icons.svg#i-burger" xlink:href="assets/icons/icons.svg#i-cart"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="main__content">
+    <h1>Корзина</h1>
+    <div class="cart">
+      <div class="cart__header">
+        <span>Товар</span>
+        <span>Количество, шт</span>
+        <span>Стоимость, ₽</span>
+      </div>
+      <div class="cart__items">
+        <div class="cart__item">
+          <span>Футболка LJGS logo</span>
+          <span>1</span>
+          <span>1500</span>
+        </div>
+        <div class="cart__item">
+          <span>Шоппер LJGS</span>
+          <span>4</span>
+          <span>650</span>
+        </div>
+        <div class="cart__item">
+          <span>Автограф Николая</span>
+          <span>3</span>
+          <span>Бесценно</span>
+        </div>
+      </div>
+      <div class="cart__total">
+        <span>Итого</span>
+        <span>&#8734;</span>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__row">
+      <div class="copyright">
+        <p class="copyright__text">
+          Copyright &copy; 2023 All rights reserved by <a href="index.html">LJGS</a>
+        </p>
+      </div>
+      <div class="social-icons">
+        <ul class="social-icons__list">
+          <li><a class="social-icons__element github" href="https://github.com/Kkkkkk58"><i
+            class="fa fa-github"></i></a></li>
+          <li><a class="social-icons__element telegram" href="https://t.me/ljgsmedia"><i class="fa fa-telegram"></i></a>
+          </li>
+          <li><a class="social-icons__element vk" href="https://vk.com/ljgsmedia"><i class="fa fa-vk"></i></a></li>
+          <li><a class="social-icons__element youtube" href="https://www.youtube.com/watch?v=W3-WESXxPfk"><i
+            class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/fixed-header.js"></script>
+<script src="js/slideshow.js"></script>
+</body>
+</html>
+

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <base href="{{site.baseurl}}" />
-
   <meta charset="UTF-8">
   <meta name="description" content="Официальный интернет-магазин мерча сообщества LJGS">
   <meta name="keywords" content="LJGS, мерч, официальный магазин, магазин, купить">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +34,7 @@
         </ul>
       </nav>
 
-      <ul>
+      <ul class="header__icons">
         <li>
           <button class="search-btn">
             <svg class="search-btn__icon" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +44,7 @@
           </button>
         </li>
         <li>
-          <button class="cart-btn">
+          <button class="cart-btn" onclick="location.href='cart.html'" type="button">
             <svg class="cart-btn__icon" xmlns="http://www.w3.org/2000/svg">
               <use href="assets/icons/icons.svg#i-cart" xlink:href="assets/icons/icons.svg#i-cart"></use>
             </svg>
@@ -55,6 +54,13 @@
           <button class="profile-btn">
             <svg class="profile-btn__icon" xmlns="http://www.w3.org/2000/svg">
               <use href="assets/icons/icons.svg#i-profile" xlink:href="assets/icons/icons.svg#i-profile"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn">
+            <svg class="nav-btn__icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/icons/icons.svg#i-burger" xlink:href="assets/icons/icons.svg#i-cart"></use>
             </svg>
           </button>
         </li>
@@ -144,7 +150,7 @@
       </div>
     </section>
     <section class="promo">
-      <div class="promo-card">
+      <div class="promo-card hide-for-mobile">
         <div class="promo-card__media">
           <iframe src="https://vk.com/video_ext.php?oid=-193123953&id=456239018&hd=1&autoplay=1" width="640"
                   allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
@@ -244,7 +250,7 @@
     <div class="footer__row">
       <div class="copyright">
         <p class="copyright__text">
-          Copyright &copy; 2023 All rights reserved by <a href="index.html">LJGS</a>.
+          Copyright &copy; 2023 All rights reserved by <a href="index.html">LJGS</a>
         </p>
       </div>
       <div class="social-icons">
