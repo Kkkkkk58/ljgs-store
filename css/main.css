@@ -85,9 +85,15 @@ header li {
   align-items: center;
 }
 
-nav li {
+.nav-item {
   :hover {
     text-shadow: 0 0 6px #8f009a;
+  }
+
+  &.active {
+    text-shadow: 0 0 6px #ad04bb;
+    text-decoration: underline #ad04bb 2px;
+    text-underline-offset: 5px;
   }
 }
 
@@ -226,7 +232,7 @@ h2 {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
   background-color: #717171;
 }
 
