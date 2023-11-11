@@ -598,3 +598,53 @@ footer .social-icons__list a {
   }
 }
 
+.table_generation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.table_generation__form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+  gap: 10px;
+}
+
+.table_generation__param {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table_generation__input {
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.table-generation__input__row {
+  width: 100%;
+  display: flex;
+}
+
+#table_generation__bgcolor {
+  align-self: center;
+}
+
+.generated_table__placeholder {
+  width: 100%;
+  align-items: center;
+}
+
+.generated_table {
+  width: 100%;
+  border: 1px solid black;
+  table-layout: fixed;
+}
+
+.generated_table__cell {
+  border: 1px solid black;
+  white-space: nowrap;
+  overflow-x: auto;
+}

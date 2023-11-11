@@ -72,6 +72,32 @@
 <main>
   <div class="main__content">
     <h1>О нас</h1>
+    <div class="table_generation">
+      <h3>Мы умеем создавать таблички</h3>
+      <form class="table_generation__form">
+        <div class="table_generation__param">
+          <label for="table_generation__rows" class="table_generation__label">Число строк:</label>
+          <input id="table_generation__rows" class="table_generation__input" type="number" min="1" max="1000" value="0"
+                 required="required">
+        </div>
+        <div class="table_generation__param">
+          <label for="table_generation__cols" class="table_generation__label">Число колонок:</label>
+          <input id="table_generation__cols" class="table_generation__input" type="number" min="1" max="100" value="0"
+                 required="required">
+        </div>
+        <div class="table_generation__param">
+          <label for="table_generation__bgcolor" class="table_generation__input">Цвет фона:</label>
+          <input id="table_generation__bgcolor" class="table_generation__input" type="color" value="#ffffff"
+                 required="required">
+        </div>
+        <input type="submit" id="table_generation__submit" class="table_generation__button" value="Создать">
+        <input type="button" id="table_generation__save_params" class="table_generation__button"
+               value="Сохранить параметры">
+        <input type="button" id="table_generation__load_params" class="table_generation__button"
+               value="Загрузить параметры">
+      </form>
+      <div class="generated_table__placeholder"></div>
+    </div>
   </div>
 </main>
 <footer class="footer">
@@ -99,5 +125,6 @@
 </footer>
 
 <script src="js/fixed-header.js"></script>
+<script src="js/table-generation.js"></script>
 </body>
 </html>
