@@ -648,3 +648,20 @@ footer .social-icons__list a {
   white-space: nowrap;
   overflow-x: auto;
 }
+
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.error_report {
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff0000;
+}
